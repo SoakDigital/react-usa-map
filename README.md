@@ -15,12 +15,15 @@ Code: [http://github.com/gabidavila/react-usa-map-demo](http://github.com/gabida
 
 It requires `react` 15.4.2 or higher, compatible with React 16.0.0. Run:
 
-`yarn add react-usa-map`
+`yarn add SoakDigital/react-usa-map`
 
 or
 
-`npm install react-usa-map --save`
+`npm install SoakDigital/react-usa-map --save`
 
+or if you encounter dependency issues
+
+`npm i npm install SoakDigital/react-usa-map --legacy-peer-deps --save`
 ## Usage
 
 The below example shows the mandatory `onClick` event.
