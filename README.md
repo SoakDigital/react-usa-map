@@ -13,7 +13,7 @@ Code: [http://github.com/gabidavila/react-usa-map-demo](http://github.com/gabida
 
 ## Installation
 
-It requires `react` 16.13.1 or higher. Run:
+It requires `react` 15.4.2 or higher, compatible with React 16.0.0. Run:
 
 `yarn add react-usa-map`
 
@@ -39,6 +39,33 @@ class App extends Component {
     return (
       <div className="App">
         <USAMap onClick={this.mapHandler} />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+The below example shows useage of the onMouseOver event
+
+```javascript
+import React, { Component } from 'react';
+import USAMap from "react-usa-map";
+
+class App extends Component {
+  /* mandatory */
+  mapHandler = (event) => {
+    alert(event.target.dataset.name);
+  };
+
+  mapMouseOverHandler = (event) => {
+    alert(event.target.dataset.name);
+  };
+
+  render() {
+    return (
+      <div className="App">
+        <USAMap onClick={this.mapHandler} onMouseOver={this.mapMouseOverHandler} />
       </div>
     );
   }
